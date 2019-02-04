@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/tmp/eisk.webapi.docs/content",
+  "source_base_path": "D:/tmp/eisk.webapi.docs1/content",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -23,7 +23,7 @@
           "hash": "xEOwzT+a2njr2KByfC7qdQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -35,7 +35,7 @@
           "hash": "lewwVoCXxDO7cq7KbsOmog=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -47,7 +47,7 @@
           "hash": "nroJPppTyB02XCMwAM2gQw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -59,7 +59,7 @@
           "hash": "ah5Upw7s5Ytl5xOaIHK2GQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -71,7 +71,7 @@
           "hash": "kJCgF2RIz6+jANYbtbTuqA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -83,7 +83,7 @@
           "hash": "f41XbriKJxSVq+DAu+rlaQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -95,7 +95,7 @@
           "hash": "YF1Fg9HgTzlV5mjh/ZHSBg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -107,7 +107,7 @@
           "hash": "ccOW8dFosreQQaSlrVcabw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -119,7 +119,7 @@
           "hash": "ql+FErZBu1nbGwmfRiElRA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -131,7 +131,7 @@
           "hash": "eQpj2aIgqAnG/GTk7Kj3pg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -143,7 +143,7 @@
           "hash": "oZXvUR3EgyhdpxtERHJ77A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -155,7 +155,7 @@
           "hash": "JMK1rZabQby2FCDHK7SCZw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -176,41 +176,40 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "rL9SGK8qWe1jNxyxuJHbaQ=="
+          "hash": "wDx42BTx5sEd+xnQzPIgLg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
