@@ -68,19 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/architecture/testing-services.html",
-          "hash": "8FLw/4qcTDLv5EowiOQPmQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/community-support/eisk-get-recognized.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/community-support/eisk-get-recognized.html",
-          "hash": "qvIZnPafdBT9i/BaZCm5Vg=="
+          "hash": "0aY27Gxi2aORzvBBPjOTjA=="
         }
       },
       "is_incremental": false,
@@ -148,6 +136,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/support/eisk-get-recognized.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/support/eisk-get-recognized.html",
+          "hash": "5fdW6GRpHQZVYNnz5g1Wsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/technical-reference/technology-stack.md",
       "output": {
         ".html": {
@@ -159,15 +159,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Toc",
       "source_relative_path": "docs/toc.md",
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "lZChiybJf+wHzvJj+tlq9g=="
+          "hash": "oq88t67x1/KU6Hn+Y9xBQA=="
         }
       },
       "is_incremental": false,

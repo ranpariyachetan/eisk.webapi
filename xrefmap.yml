@@ -3,7 +3,7 @@ sorted: true
 references:
 - uid: eisk-get-recognized
   name: Get Recognized
-  href: docs/community-support/eisk-get-recognized.html
+  href: docs/support/eisk-get-recognized.html
 - uid: eisk-webapi-architecture
   name: Architectural Overview
   href: docs/architecture/index.html
@@ -31,8 +31,8 @@ references:
 - uid: eisk-webapi-technology-stack
   name: Technology Stack
   href: docs/technical-reference/technology-stack.html
-- uid: eisk-webapi-testing-domain-service-testing-strategies
-  name: Domain Service Testing Strategies
+- uid: eisk-webapi-testing-services
+  name: Testing Services
   href: docs/architecture/testing-services.html
 - uid: eisk-webapi-what-is-eisk
   name: What is EISK?
