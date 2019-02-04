@@ -31,9 +31,9 @@ references:
 - uid: eisk-webapi-technology-stack
   name: Technology Stack
   href: docs/technical-reference/technology-stack.html
-- uid: eisk-webapi-testing-domain-service-testing-strategies
+- uid: eisk-webapi-testing-services
   name: Domain Service Testing Strategies
-  href: docs/architecture/domain-service-testing-strategies.html
+  href: docs/architecture/testing-services.html
 - uid: eisk-webapi-what-is-eisk
   name: What is EISK?
   href: docs/get-started/what-is-eisk.html

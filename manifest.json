@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/tmp/eisk.webapi.docs1/content",
+  "source_base_path": "D:/tmp/eisk.webapi.docs/content",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -12,18 +12,6 @@
         }
       },
       "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/architecture/domain-service-testing-strategies.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/architecture/domain-service-testing-strategies.html",
-          "hash": "xEOwzT+a2njr2KByfC7qdQ=="
-        }
-      },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,6 +60,18 @@
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/testing-services.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/testing-services.html",
+          "hash": "K/Xv+JoTwVpXK9jc6HmOTg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -164,7 +164,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "04+oqyVIfnfV1toAWZmOSw=="
+          "hash": "yiFiue2ZpwirSW1yl227Yg=="
         }
       },
       "is_incremental": false,
