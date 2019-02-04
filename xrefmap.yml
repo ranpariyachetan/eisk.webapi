@@ -13,6 +13,12 @@ references:
 - uid: eisk-webapi-download-options
   name: EISK Web Api Download options
   href: docs/get-started/download-options.html
+- uid: eisk-webapi-download-options-dotnet-new
+  name: EISK Web Api - dotnet Cli
+  href: docs/get-started/download-options-dotnet-new.html
+- uid: eisk-webapi-download-options-git
+  name: EISK Web Api - git
+  href: docs/get-started/download-options-git.html
 - uid: eisk-webapi-exception-handling
   name: Exception Handling
   href: docs/architecture/exception-handling.html
@@ -20,7 +26,7 @@ references:
   name: Getting Started with EISK Web Api
   href: docs/get-started/index.html
 - uid: eisk-webapi-handson-walkthrough
-  name: Hands on Walk through
+  name: Hands on Walkthrough
   href: docs/get-started/handson-walkthrough.html
 - uid: eisk-webapi-logging
   name: Logging

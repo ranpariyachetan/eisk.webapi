@@ -88,11 +88,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/get-started/download-options-dotnet-new.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/get-started/download-options-dotnet-new.html",
+          "hash": "9nt3CeolqXhpYISyBDy3Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/get-started/download-options-git.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/get-started/download-options-git.html",
+          "hash": "qs7zDXU9JT0aYlT/QGiP+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/get-started/download-options.md",
       "output": {
         ".html": {
           "relative_path": "docs/get-started/download-options.html",
-          "hash": "Sjp3e1RJPG/lLNbhWIv7FQ=="
+          "hash": "Y0Qk8ioozjK19lauzm9tBw=="
         }
       },
       "is_incremental": false,
@@ -104,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/handson-walkthrough.html",
-          "hash": "JAoKmyWAYtz96HROJUG38Q=="
+          "hash": "LLWVQRGAcsYr358Jy1ChaQ=="
         }
       },
       "is_incremental": false,
@@ -116,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/index.html",
-          "hash": "FB2+88mdha47l+yKjCs3pw=="
+          "hash": "SQzEqgzqwB7nUAJEwHN/Tg=="
         }
       },
       "is_incremental": false,
@@ -164,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "lLxI47qP4d+w/GNbj20cAA=="
+          "hash": "eZqCyHUaVtkDxIaN2xfGbQ=="
         }
       },
       "is_incremental": false,
