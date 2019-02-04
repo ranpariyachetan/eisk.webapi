@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/a/1/s/content",
+  "source_base_path": "D:/tmp/eisk.webapi.docs/content",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/architecture/exception-handling.html",
-          "hash": "bc2hxOLflxalu9xpW5UJig=="
+          "hash": "lewwVoCXxDO7cq7KbsOmog=="
         }
       },
       "is_incremental": false,
@@ -32,7 +32,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/architecture/index.html",
-          "hash": "a9fOTloMn24LZ0E+/5T7nw=="
+          "hash": "nroJPppTyB02XCMwAM2gQw=="
         }
       },
       "is_incremental": false,
@@ -44,7 +44,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/architecture/logging.html",
-          "hash": "sU7X0y0BziRztvHgXzBMAg=="
+          "hash": "ah5Upw7s5Ytl5xOaIHK2GQ=="
         }
       },
       "is_incremental": false,
@@ -56,7 +56,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/architecture/logical-layers.html",
-          "hash": "1dKLCXW3IyZnhzVZKFBtPQ=="
+          "hash": "kJCgF2RIz6+jANYbtbTuqA=="
         }
       },
       "is_incremental": false,
@@ -68,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/architecture/testing-services.html",
-          "hash": "0aY27Gxi2aORzvBBPjOTjA=="
+          "hash": "CFzl+n+2tY1AFYJu53cP/g=="
         }
       },
       "is_incremental": false,
@@ -80,7 +80,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/develop-deliver/develop-with-eisk.html",
-          "hash": "SPuMfl4ziZcBnMC5I/OjNw=="
+          "hash": "YF1Fg9HgTzlV5mjh/ZHSBg=="
         }
       },
       "is_incremental": false,
@@ -92,7 +92,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/download-options.html",
-          "hash": "Sjp3e1RJPG/lLNbhWIv7FQ=="
+          "hash": "ccOW8dFosreQQaSlrVcabw=="
         }
       },
       "is_incremental": false,
@@ -104,7 +104,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/handson-walkthrough.html",
-          "hash": "AJgx92hoxs8wL2Vtcc8TXQ=="
+          "hash": "ql+FErZBu1nbGwmfRiElRA=="
         }
       },
       "is_incremental": false,
@@ -116,7 +116,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/index.html",
-          "hash": "hKnKtOXsIgCiPzAC+u8gNA=="
+          "hash": "eQpj2aIgqAnG/GTk7Kj3pg=="
         }
       },
       "is_incremental": false,
@@ -128,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/what-is-eisk.html",
-          "hash": "YciQZIW8/7IvSCMVJ8CkQQ=="
+          "hash": "oZXvUR3EgyhdpxtERHJ77A=="
         }
       },
       "is_incremental": false,
@@ -140,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/support/eisk-get-recognized.html",
-          "hash": "5fdW6GRpHQZVYNnz5g1Wsg=="
+          "hash": "uk6nYkLFfrUpb4wQt3RLjw=="
         }
       },
       "is_incremental": false,
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/technical-reference/technology-stack.html",
-          "hash": "1tSlD/jKPb1qX/pM7XB/rw=="
+          "hash": "JMK1rZabQby2FCDHK7SCZw=="
         }
       },
       "is_incremental": false,
@@ -176,41 +176,40 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "W6qrKrenMwK8UvAy7NuOBQ=="
+          "hash": "wDx42BTx5sEd+xnQzPIgLg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
