@@ -97,13 +97,14 @@
 <p><code>Get (/api/Empliyees) -&gt; Try it out -&gt; Execute</code></p>
 <p>A json response will be shown under &quot;Server response&quot; section with all employees as available in database.</p>
 <p>You can perform other http verb operations by following the similar steps mentioned above.</p>
-<h2 id="step-4-creating-an-api-with-new-use-case">Step 4: Creating an Api with New Use Case</h2>
+<h2 id="step-4-creating-an-new-api-service">Step 4: Creating an New Api Service</h2>
 <p>As you get familiar with the default use case employee, you may want to write your own api with a new use case, so see how the EISK has been designed to write web api easily with best coding and architectural guidelines.</p>
 <h3 id="use-case-employee-time-sheet">Use Case Employee Time Sheet</h3>
 <p>As an application user, I want to store employee time sheet for different projects everyday. A single time sheet entry may associate zero or one project.</p>
 <h3 id="creating-the-domain">Creating the Domain</h3>
-<p>To support the above use case, let's create a &quot;EmployeeTimeSheet.cs&quot; domain under the following location:</p>
-<p><code>\DomainCore\ Eisk.Domains\ EmployeeTimeSheet.cs</code></p>
+<p>To support the above use case, let's create a &quot;EmployeeTimeSheet.cs&quot; domain under the following solution location:</p>
+<p><code>Project: Eisk.Domains</code></p>
+<p><code>New file path: EmployeeTimeSheet.cs</code></p>
 <pre><code>using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -128,13 +129,15 @@ namespace Eisk.Domains.Employee
 }
 </code></pre>
 <h3 id="add-property-to-database-context">Add Property to Database Context</h3>
-<p>Add a property as provided below in the following location:</p>
-<p><code>DataServices.EFCore\ Eisk.DataServices.EFCore\ DataContext\ AppDbContext.cs</code></p>
+<p>Add a property as provided below in the following solution location:</p>
+<p><code>Project: Eisk.DataServices.EFCore</code></p>
+<p><code>File location: DataContext\AppDbContext.cs</code></p>
 <pre><code>public virtual DbSet&lt;EmployeeTimeSheet&gt; EmployeeTimeSheets { get; set; }
 </code></pre>
 <h3 id="add-data-service-class">Add Data Service Class</h3>
 <p>Add a new class as provided below on the following location:</p>
-<p><code>DataServices.EFCore\ Eisk.DataServices.EFCore\ EmployeeTimeSheetDataService.cs</code></p>
+<p><code>Project: Eisk.DataServices.EFCore</code></p>
+<p><code>New file location: EmployeeTimeSheetDataService.cs</code></p>
 <pre><code>using Eisk.Core.DataService.EFCore;
 using Eisk.DataServices.EFCore.DataContext;
 using Eisk.Domains.Employee;
