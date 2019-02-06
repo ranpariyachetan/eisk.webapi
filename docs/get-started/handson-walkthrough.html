@@ -103,7 +103,7 @@
 <p>As an application user, I want to store employee time sheet for different projects everyday. A single time sheet entry may associate zero or one project.</p>
 <h3 id="creating-the-domain">Creating the Domain</h3>
 <p>To support the above use case, let's create a &quot;EmployeeTimeSheet.cs&quot; domain under the following location:</p>
-<p><code>\DomainCore\Eisk.Domains\EmployeeTimeSheet.cs</code></p>
+<p><code>\DomainCore\ Eisk.Domains\ EmployeeTimeSheet.cs</code></p>
 <pre><code>using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -129,12 +129,12 @@ namespace Eisk.Domains.Employee
 </code></pre>
 <h3 id="add-property-to-database-context">Add Property to Database Context</h3>
 <p>Add a property as provided below in the following location:</p>
-<p><code>DataServices.EFCore\Eisk.DataServices.EFCore\DataContext\AppDbContext.cs</code></p>
+<p><code>DataServices.EFCore\ Eisk.DataServices.EFCore\ DataContext\ AppDbContext.cs</code></p>
 <p>Code:</p>
 <p><code>public virtual DbSet&lt;EmployeeTimeSheet&gt; EmployeeTimeSheets { get; set; }</code></p>
 <h3 id="add-data-service-class">Add Data Service Class</h3>
 <p>Add a new class as provided below on the following location:</p>
-<p><code>DataServices.EFCore\Eisk.DataServices.EFCore\EmployeeTimeSheetDataService.cs</code></p>
+<p><code>DataServices.EFCore\ Eisk.DataServices.EFCore\ EmployeeTimeSheetDataService.cs</code></p>
 <pre><code>using Eisk.Core.DataService.EFCore;
 using Eisk.DataServices.EFCore.DataContext;
 using Eisk.Domains.Employee;

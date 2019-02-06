@@ -16,6 +16,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/application-development/develop-with-eisk.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/application-development/develop-with-eisk.html",
+          "hash": "wF998MGEVvAdqfjA1UtrNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/architecture/exception-handling.md",
       "output": {
         ".html": {
@@ -76,18 +88,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/develop-deliver/develop-with-eisk.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/develop-deliver/develop-with-eisk.html",
-          "hash": "DLwQXz4UkaRWMTBthmSzPg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/get-started/download-options-dotnet-new.md",
       "output": {
         ".html": {
@@ -128,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/handson-walkthrough.html",
-          "hash": "o3U9CXjpFC/GmhTv/ldHnw=="
+          "hash": "G+0Bp137G7NESIrtYOrLfQ=="
         }
       },
       "is_incremental": false,

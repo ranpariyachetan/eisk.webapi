@@ -9,7 +9,7 @@ references:
   href: docs/architecture/index.html
 - uid: eisk-webapi-develop-with-eisk
   name: Develop With EISK
-  href: docs/develop-deliver/develop-with-eisk.html
+  href: docs/application-development/develop-with-eisk.html
 - uid: eisk-webapi-download-options
   name: EISK Web Api Download options
   href: docs/get-started/download-options.html
