@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Testing Services </title>
+    <title>Create New EISK Web Api Project with dotnet Cli </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Testing Services ">
+    <meta name="title" content="Create New EISK Web Api Project with dotnet Cli ">
     <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -66,59 +66,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="eisk-webapi-testing-services">
-<h1 id="testing-services">Testing Services</h1>
+            <article class="content wrap" id="_content" data-uid="eisk-webapi-downlod-options-dotnet-new">
+<h1 id="create-new-eisk-web-api-project-with-dotnet-cli">Create New EISK Web Api Project with dotnet Cli</h1>
 
-<p>Test business logic located in <a class="xref" href="logical-layers.html">domain service</a> can be done with different approaches.</p>
-<h2 id="integration-tests-only">Integration Tests Only</h2>
-<ul>
-<li><p>Domain service rules are tested by creating in-memory database.</p>
-</li>
-<li><p>No integration tests are performed against data service.</p>
-</li>
-<li><p>Provides more confidence on the written code, as rules are tested against database.</p>
-</li>
-<li><p>Default testing strategy of Eisk Web Api for domain service testing.</p>
-<pre><code>  [Fact]
-  public virtual void Add_ValidDomainPassed_ShouldReturnDomainAfterCreation()
-  {
-      //Arrange
-      var inputDomain = Factory_Entity();
-      var domainService = GetServiceInstance();
-
-      //Act
-      var returnedDomain = domainService.Add(inputDomain);
-
-      //Assert
-      Assert.NotNull(returnedDomain);
-      Assert.NotEqual(default(TId), GetIdValueFromEntity(returnedDomain));
-  }
-</code></pre>
-</li>
-</ul>
-<h2 id="unit-tests-only">Unit Tests Only</h2>
-<p>Tests domain services using mock frameworks and verifies the actions (such as validations that requires accessing database etc) are performed as expected.</p>
-<h2 id="unit--integration-tests">Unit + Integration Tests</h2>
-<h3 id="domain-service-unit-tests">Domain Service Unit Tests</h3>
-<p>Domain service rules are tested by creating mocks.</p>
-<h3 id="data-service-integration-tests">Data Service Integration Tests</h3>
-<p>Tests the data services that uses advanced functionalities provided by underlying ORM. The tests are performed on top of in-memory database or actual physical database.</p>
-<pre><code>    [Fact]
-    public virtual void Add_ValidDomainWithRandomIdPassed_ShouldReturnDomainAfterCreation()
-    {
-        //Arrange
-        var inputEntity = Factory_Entity();
-        SetIdValueToEntity(inputEntity, IntegerValueGenerator.RandomInt;);
-        var dataService = GetServiceInstance();
-
-        //Act
-        var returnedEntity = dataService.Add(inputEntity);
-
-        //Assert
-        Assert.NotNull(returnedEntity);
-        Assert.NotEqual(default(TId), GetIdValueFromEntity(returnedEntity));
-    }
-</code></pre>
+<h2 id="step-1-install-dotnet-new-template-for-eisk-web-api">Step 1: Install dotnet new Template for EISK Web Api</h2>
+<p>You can download EISK with different options and choices. Consider the following simple walk through to install EISK in your local machine with dotnet cli, which comes built-in with latest visual studio.</p>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new">dotnet cli</a> provides excellent command line options to create, build, test, deploy .net core application easily.</p>
+<p>To install EISK Web Api with dotnet cli, open command prompt, and type the following command:</p>
+<p><code>dotnet new -i eisk.webapi</code></p>
+<p>Installing this template in your local machine will allow you creating as many web api projects with EISK as you want.</p>
+<h2 id="step-2-create-a-new-web-api-project">Step 2: Create a New Web Api Project</h2>
+<p>From the command prompt, navigate to a directory, where you want to create new web api and type the following command:</p>
+<p><code>dotnet new eiskwebapi -n Eisk</code></p>
+<p>The 'n' paramter accepts the root namespace of the project (in the given example this is Eisk). You can consider your company name or choice of your root namespace.</p>
+<p>After the solution is created simply click the created solution to open in Visual Studio.</p>
 </article>
           </div>
           
@@ -127,7 +88,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/EISK/eisk.webapi.docs/blob/master/content/docs/architecture/testing-services.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/EISK/eisk.webapi.docs/blob/master/content/docs/get-started/downlod-options-dotnet-new.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

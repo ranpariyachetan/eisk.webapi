@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Hands on Walkthrough </title>
+    <title>Hands on Walk-through </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Hands on Walkthrough ">
-    <meta name="generator" content="docfx 2.40.7.0">
+    <meta name="title" content="Hands on Walk-through ">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -67,7 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="eisk-webapi-handson-walkthrough">
-<h1 id="hands-on-walkthrough">Hands on Walkthrough</h1>
+<h1 id="hands-on-walk-through">Hands on Walk-through</h1>
 
 <p>In this step by step article, you'll be creating a new web api from the scratch. With the utilities and bootstrap code as provided by EISK, you'll realize how easy to create a new web api with Visual Studio and ASP.NET Core.</p>
 <p>This article assumes you've basic understanding with Object Oriented Programming.</p>
@@ -102,7 +102,8 @@
 <h3 id="use-case-employee-time-sheet">Use Case Employee Time Sheet</h3>
 <p>As an application user, I want to store employee time sheet for different projects everyday. A single time sheet entry may associate zero or one project.</p>
 <h3 id="creating-the-domain">Creating the Domain</h3>
-<p>To support the above use case, let's create a &quot;EmployeeTimeSheet.cs&quot; domain under the following location: \eisk.webapi\DomainCore\Eisk.Domains\EmployeeTimeSheet.cs</p>
+<p>To support the above use case, let's create a &quot;EmployeeTimeSheet.cs&quot; domain under the following location:</p>
+<p><code>\DomainCore\Eisk.Domains\EmployeeTimeSheet.cs</code></p>
 <pre><code>using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -127,10 +128,13 @@ namespace Eisk.Domains.Employee
 }
 </code></pre>
 <h3 id="add-property-to-database-context">Add Property to Database Context</h3>
-<p>Add a property as provided below in the following location: \eisk.webapi\DataServices.EFCore\Eisk.DataServices.EFCore\DataContext\AppDbContext.cs</p>
+<p>Add a property as provided below in the following location:</p>
+<p><code>DataServices.EFCore\Eisk.DataServices.EFCore\DataContext\AppDbContext.cs</code></p>
+<p>Code:</p>
 <p><code>public virtual DbSet&lt;EmployeeTimeSheet&gt; EmployeeTimeSheets { get; set; }</code></p>
 <h3 id="add-data-service-class">Add Data Service Class</h3>
-<p>Add a new class as provided below on the following location: \eisk.webapi\DataServices.EFCore\Eisk.DataServices.EFCore\EmployeeTimeSheetDataService.cs</p>
+<p>Add a new class as provided below on the following location:</p>
+<p><code>DataServices.EFCore\Eisk.DataServices.EFCore\EmployeeTimeSheetDataService.cs</code></p>
 <pre><code>using Eisk.Core.DataService.EFCore;
 using Eisk.DataServices.EFCore.DataContext;
 using Eisk.Domains.Employee;

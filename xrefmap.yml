@@ -26,7 +26,7 @@ references:
   name: Getting Started with EISK Web Api
   href: docs/get-started/index.html
 - uid: eisk-webapi-handson-walkthrough
-  name: Hands on Walkthrough
+  name: Hands on Walk-through
   href: docs/get-started/handson-walkthrough.html
 - uid: eisk-webapi-logging
   name: Logging
