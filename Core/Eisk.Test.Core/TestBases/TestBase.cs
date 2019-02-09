@@ -1,14 +1,15 @@
 ﻿using System;
-using Eisk.Core.Exceptions;
-using Eisk.Test.Core.DataGen;
 using Xunit;
 
 namespace Eisk.Test.Core.TestBases
 {
+    using DataGen;
+    using Eisk.Core.Exceptions;
+    
     public abstract class TestBase
     {
         protected static void ExpectException<TException>(Action action, 
-            TException expectedIdentityHttpError)
+            TException expectedException)
             where TException: CoreException
         {
             //Act
@@ -16,21 +17,8 @@ namespace Eisk.Test.Core.TestBases
 
             //Assert
             Assert.NotNull(actualException);
-            Assert.Equal(expectedIdentityHttpError.Message, actualException.Message);
-            Assert.Equal(expectedIdentityHttpError.ErrorCode, actualException.ErrorCode);
-        }
-
-        protected static void ExpectException<TException>(Action action)
-            where TException : CoreException, new()
-        {
-            ExpectException(action, new TException());
-        }
-
-        protected void AssertValidationAttribute(Type entityType, string fieldName, Type attributeType)
-        {
-            var pi = entityType.GetProperty(fieldName);
-            var hasIsIdentity = Attribute.IsDefined(pi, attributeType);
-            Assert.True(hasIsIdentity);
+            Assert.Equal(expectedException.Message, actualException.Message);
+            Assert.Equal(expectedException.ErrorCode, actualException.ErrorCode);
         }
 
         protected TEntity Factory_Entity<TEntity>(Action<TEntity> action = null)

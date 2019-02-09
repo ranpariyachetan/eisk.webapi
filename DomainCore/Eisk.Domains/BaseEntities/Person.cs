@@ -1,11 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Eisk.Domains.ValueObjects;
-using Eisk.Domains.Models.Employee.Enums;
 
 namespace Eisk.Domains.BaseEntities
 {
+    using Models.Employee;
+    using ValueObjects;
+
     public class Person
     {
         [Key]
