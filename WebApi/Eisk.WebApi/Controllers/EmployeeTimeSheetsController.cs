@@ -7,12 +7,13 @@ namespace Eisk.WebApi.Controllers
     using Eisk.Core.WebApi;
 
     [Route("api/[controller]")]
-    public class EmployeeTimeSheetsController: 
-        WebApiControllerBaseAsync<EmployeeTimeSheet,int>
+    public class EmployeeTimeSheetsController
+        :WebApiControllerBaseAsync<EmployeeTimeSheet,int>
     {
         public EmployeeTimeSheetsController(
-            DomainServiceAsync<EmployeeTimeSheet, int> employeeTimeSheetDomainService):
-            base(employeeTimeSheetDomainService)
+            DomainServiceAsync<EmployeeTimeSheet, int> 
+                employeeTimeSheetDomainService)
+                    :base(employeeTimeSheetDomainService)
         {
             
         }
