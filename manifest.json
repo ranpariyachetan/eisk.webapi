@@ -23,7 +23,7 @@
           "hash": "5fuI5Rq8d+MFsHGLUlLllA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -32,7 +32,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/application-development/handson-walkthrough-create-service-api.html",
-          "hash": "nLOaXB3INqpm5TVXAWJN6Q=="
+          "hash": "inQHOeQfhiopPfPVsj+8YA=="
         }
       },
       "is_incremental": false,
@@ -47,7 +47,7 @@
           "hash": "ozcs4L75xMif53AcZ6rWEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -59,7 +59,7 @@
           "hash": "uZU8iU5cVfXkhT0fudrv1g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -71,7 +71,7 @@
           "hash": "GgHTwHJr4FAMRM2Pe3huXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -83,7 +83,7 @@
           "hash": "YLUi5BbMjK3Fwm1R/KXrHw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -95,7 +95,7 @@
           "hash": "3nFYxX2pwpF7FAyXCub08g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -119,7 +119,7 @@
           "hash": "BhYf9fVQjUv8vUd1of/DRg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -131,7 +131,7 @@
           "hash": "ksViG56v0Qi4n17SHmx7jw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -143,7 +143,7 @@
           "hash": "hceMBL5DkbBf9LjMndeeQw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -155,7 +155,7 @@
           "hash": "7e27XNgdEG9Q8nDbPvu7tQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -167,7 +167,7 @@
           "hash": "tC6OZmArEMTTjRuF0a1Q9Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -179,7 +179,7 @@
           "hash": "GDd+ALzDT5tM9z1ZYB9dDQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -203,15 +203,14 @@
           "hash": "h0Uia9G6vGAPEN+3xsJ6Bg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
@@ -226,15 +225,15 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
