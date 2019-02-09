@@ -25,9 +25,9 @@ references:
 - uid: eisk-webapi-get-started
   name: Getting Started with EISK Web Api
   href: docs/get-started/index.html
-- uid: eisk-webapi-handson-walkthrough-create-service
-  name: 'Hands-on Walk-through: Create New Service'
-  href: docs/application-development/handson-walkthrough-create-service.html
+- uid: eisk-webapi-handson-walkthrough-create-service-api
+  name: Create New Service Api
+  href: docs/application-development/handson-walkthrough-create-service-api.html
 - uid: eisk-webapi-logging
   name: Logging
   href: docs/architecture/logging.html

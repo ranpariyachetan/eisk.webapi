@@ -28,11 +28,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/application-development/handson-walkthrough-create-service.md",
+      "source_relative_path": "docs/application-development/handson-walkthrough-create-service-api.md",
       "output": {
         ".html": {
-          "relative_path": "docs/application-development/handson-walkthrough-create-service.html",
-          "hash": "c+2Tl3Zslg1IBvORH6t9Fg=="
+          "relative_path": "docs/application-development/handson-walkthrough-create-service-api.html",
+          "hash": "YTy2e/VJi1yiojZlZ+XxeA=="
         }
       },
       "is_incremental": false,
@@ -104,7 +104,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/get-started/download-options-dotnet-new.html",
-          "hash": "zvPrtYMzFn2G1wsbKGIF4g=="
+          "hash": "HB91XvIBimjeUovHTKKFHA=="
         }
       },
       "is_incremental": false,
@@ -188,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "v/mTtBx5rE7qREgfgvGamQ=="
+          "hash": "iq4TDvHh44DmiwXgaAVTsA=="
         }
       },
       "is_incremental": false,

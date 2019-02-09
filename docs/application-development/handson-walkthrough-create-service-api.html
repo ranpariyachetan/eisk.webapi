@@ -16,9 +16,9 @@
   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Hands-on Walk-through: Create New Service </title>
+    <title>Create New Service Api </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Hands-on Walk-through: Create New Service ">
+    <meta name="title" content="Create New Service Api ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -78,10 +78,11 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="eisk-webapi-handson-walkthrough-create-service">
-<h1 id="hands-on-walk-through-create-new-service">Hands-on Walk-through: Create New Service</h1>
+            <article class="content wrap" id="_content" data-uid="eisk-webapi-handson-walkthrough-create-service-api">
+<h1 id="create-new-service-api">Create New Service Api</h1>
 
-<p>In this step by step article, you'll be creating a new web api from the scratch. With the utilities and bootstrap code as provided by EISK, you'll realize how easy to create a new web api with Visual Studio and ASP.NET Core.</p>
+<p>In this step by step article, you'll be creating a new web api from the scratch through which you can perform CRUD operation on a database entity.</p>
+<p>With the utilities and bootstrap code as provided by EISK, you'll realize how easy to create a new web api with Visual Studio and ASP.NET Core.</p>
 <p>This article assumes you've basic understanding with Object Oriented Programming.</p>
 <h2 id="step-1-check-system-requirements">Step 1: Check System Requirements</h2>
 <p>To start developing a new web api, you'll need the following or upper version of Visual Studio. If you've not installed it yet, you can get a free copy of Visual Studio Community Edition from it's download site (link provided below).</p>
@@ -109,14 +110,14 @@
 <p><code>Get (/api/Empliyees) -&gt; Try it out -&gt; Execute</code></p>
 <p>A json response will be shown under &quot;Server response&quot; section with all employees as available in database.</p>
 <p>You can perform other http verb operations by following the similar steps mentioned above.</p>
-<h2 id="step-4-creating-a-new-service">Step 4: Creating a New Service</h2>
+<h2 id="step-4-creating-a-new-service-api">Step 4: Creating a New Service Api</h2>
 <p>As you get familiar with the default use case employee, you may want to write your own api with a new use case, so see how the EISK has been designed to write web api easily with best coding and architectural guidelines.</p>
 <h3 id="use-case-employee-time-sheet">Use Case Employee Time Sheet</h3>
 <p>As an application user, I want to store employee time sheet for different projects everyday. A single time sheet entry may associate zero or one project.</p>
-<h3 id="creating-the-domain">Creating the Domain</h3>
+<h3 id="creating-new-domain">Creating New Domain</h3>
 <p>To support the above use case, let's create a &quot;EmployeeTimeSheet.cs&quot; domain under the following solution location:</p>
 <p><code>Project: Eisk.Domains</code></p>
-<p><code>New file path: EmployeeTimeSheet.cs</code></p>
+<p><code>New file path: Entities\EmployeeTimeSheet.cs</code></p>
 <pre><code>using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -133,7 +134,7 @@ namespace Eisk.Domains.Employee
 
 		public DateTime TimeSheetDate { get; set; }
 
-		public float TimeSheetHours { get; set; }
+		public float LoggedHours { get; set; }
 
 		public string ProjectCode { get; set; }
 
@@ -146,27 +147,32 @@ namespace Eisk.Domains.Employee
 <p><code>File location: DataContext\AppDbContext.cs</code></p>
 <pre><code>public virtual DbSet&lt;EmployeeTimeSheet&gt; EmployeeTimeSheets { get; set; }
 </code></pre>
-<h3 id="add-data-service-class">Add Data Service Class</h3>
+<h3 id="add-service-api">Add Service Api</h3>
 <p>Add a new class as provided below on the following solution location:</p>
-<p><code>Project: Eisk.DataServices.EFCore</code></p>
-<p><code>New file location: EmployeeTimeSheetDataService.cs</code></p>
-<pre><code>using Eisk.Core.DataService.EFCore;
-using Eisk.DataServices.EFCore.DataContext;
-using Eisk.Domains.Employee;
+<p><code>Project: Eisk.WebApi</code></p>
+<p><code>New file location: Controllers\EmployeeTimeSheetsController.cs</code></p>
+<pre><code>using Microsoft.AspNetCore.Mvc;
 
-namespace Eisk.DataServices.EFCore
+namespace Eisk.WebApi.Controllers
 {
-	public class EmployeeTimeSheetDataService : EntityContextDataService&lt;EmployeeTimeSheet&gt;
-	{
-		public EmployeeTimeSheetDataService(AppDbContext dbContext) : base(dbContext)
-		{
+	using Core.DomainService;
+	using Domains.Entities;
+	using Eisk.Core.WebApi;
 
+	[Route(&quot;api/[controller]&quot;)]
+	public class EmployeeTimeSheetsController : WebApiControllerBaseAsync&lt;EmployeeTimeSheet,int&gt;
+	{
+		public EmployeeTimeSheetsController(DomainServiceAsync&lt;EmployeeTimeSheet, int&gt; employeeTimeSheetDomainService) :base(employeeTimeSheetDomainService)
+		{
+			
 		}
 	}
 }
 </code></pre>
-<h3 id="add-a-domain-service-class">Add a Domain Service Class</h3>
-<p>Add a new class as provided below on the following solution location:</p>
+<h3 id="build--run-locally">Build &amp; Run Locally</h3>
+<p>Similar to Step 3, simply press &quot;Control + F5&quot; to open WebApi project in browser.</p>
+<p>In the Swagger UI you'll notice a new section is available to test the new api we just created for EmployeeTimeSheets.</p>
+<p>Play with the UI to add create, read, update, delete employee time-sheet.</p>
 </article>
           </div>
           
@@ -175,7 +181,7 @@ namespace Eisk.DataServices.EFCore
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/EISK/eisk.webapi.docs/blob/master/content/docs/application-development/handson-walkthrough-create-service.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/EISK/eisk.webapi.docs/blob/master/content/docs/application-development/handson-walkthrough-create-service-api.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
