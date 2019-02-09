@@ -29,6 +29,15 @@ namespace Eisk.EFCore.Setup
                             x.ReportsToId = null;
                         }));
 
+            for (int i = 0; i < 10; i++)
+                context.EmployeeTimeSheets.Add(
+                    EntityDataFactory<EmployeeTimeSheet>.Factory_Entity_Instance(
+                        x =>
+                        {
+                            x.Id = 0;
+                            x.EmployeeId = 1;
+                        }));
+
             context.SaveChanges();
         }
     }
