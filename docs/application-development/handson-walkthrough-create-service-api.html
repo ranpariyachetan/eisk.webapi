@@ -19,7 +19,7 @@
     <title>Create New Service Api </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Create New Service Api ">
-    <meta name="generator" content="docfx 2.40.7.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -160,9 +160,12 @@ namespace Eisk.WebApi.Controllers
 	using Eisk.Core.WebApi;
 
 	[Route(&quot;api/[controller]&quot;)]
-	public class EmployeeTimeSheetsController : WebApiControllerBaseAsync&lt;EmployeeTimeSheet,int&gt;
+	public class EmployeeTimeSheetsController: 
+		WebApiControllerBaseAsync&lt;EmployeeTimeSheet,int&gt;
 	{
-		public EmployeeTimeSheetsController(DomainServiceAsync&lt;EmployeeTimeSheet, int&gt; employeeTimeSheetDomainService) :base(employeeTimeSheetDomainService)
+		public EmployeeTimeSheetsController(
+			DomainServiceAsync&lt;EmployeeTimeSheet, int&gt; employeeTimeSheetDomainService):
+			base(employeeTimeSheetDomainService)
 		{
 			
 		}
